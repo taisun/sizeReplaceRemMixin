@@ -1,5 +1,5 @@
 //Size Replace Rem
-@mixin sizeReplace($sizeName, $prop, $boolean, $ArySize: $mgns) {
+@mixin sizeReplace($sizeName, $prop, $boolean:false, $ArySize: $mgns) {
   $priority: null;
   @if $boolean != false {$priority: !important}
   @if map-has-key($ArySize, $sizeName) {
