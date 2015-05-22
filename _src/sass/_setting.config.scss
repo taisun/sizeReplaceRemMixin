@@ -1,0 +1,14 @@
+//font
+$font-size: 14px;
+
+//margin base
+$base-mrgin: 4px;
+
+$mgns: (
+  xs: $base-mrgin,
+  sm: $base-mrgin * 2,
+  md: $base-mrgin * 4,
+  lg: $base-mrgin * 8,
+  xl: $base-mrgin * 12,
+  xxl: $base-mrgin * 16,
+);

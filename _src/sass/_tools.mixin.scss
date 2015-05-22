@@ -1,0 +1,13 @@
+//Size Replace Rem
+@mixin sizeReplace($sizeName, $prop, $boolean, $ArySize: $mgns) {
+  $priority: null;
+  @if $boolean != false {$priority: !important}
+  @if map-has-key($ArySize, $sizeName) {
+    $size: map-get($ArySize, $sizeName);
+    #{$prop}: $size $priority;
+    #{$prop}: multipl(division($size, $font-size),1rem) $priority;
+  }@else {
+    #{$prop}: $sizeName $priority;
+    #{$prop}: multipl(division($size, $font-size),1rem) $priority;
+  }
+}

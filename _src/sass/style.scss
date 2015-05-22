@@ -1,0 +1,31 @@
+@import "./setting.config";
+@import "./tool.function.operator";
+@import "./tools.mixin";
+
+.u- {
+	@at-root{
+		#{&}mgb {
+			@at-root{
+				$selector: margin-bottom;
+				#{selector-append(&, '__xs')}{
+					@include sizeReplace(xs, $selector, true);
+				}
+				#{selector-append(&, '__sm')}{
+					@include sizeReplace(sm, $selector, true);
+				}
+				#{selector-append(&, '__md')}{
+					@include sizeReplace(md, $selector, true);
+				}
+				#{selector-append(&, '__lg')}{
+					@include sizeReplace(lg, $selector, true);
+				}
+				#{selector-append(&, '__xl')}{
+					@include sizeReplace(xl, $selector, true);
+				}
+				#{selector-append(&, '__xxl')}{
+					@include sizeReplace(xxl, $selector, true);
+				}
+			}
+		}
+  }
+}
